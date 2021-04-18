@@ -1,0 +1,105 @@
+.story {
+  width: 75%;
+  margin: 0 auto;
+  box-shadow: 0 3rem 6rem rgba($color-black, 0.1);
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-black, 0.5),
+      rgba($color-primary, 0.1),
+      rgba($color-black, 0.5)
+    ),
+    url("/img/grass-unsplash.jpg");
+  background-size: contain;
+  background-position: top;
+  padding: 6rem;
+  padding-left: 9rem;
+  font-size: $default-font-size;
+
+  @include respond(tablet-portrait) {
+    width: 100%;
+    padding: 4rem;
+    padding-left: 7rem;
+    background-size: cover;
+    font-size: 1rem;
+  }
+
+  @include respond(phone) {
+    transform: skewX(0);
+    background-size: cover;
+  }
+
+  &__shape {
+    width: 13rem;
+    height: 13rem;
+    float: left;
+    overflow: hidden; 
+
+    transform: translateX(-3rem); 
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+
+    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+      -webkit-clip-path: circle(50% at 50% 50%);
+      clip-path: circle(50% at 50% 50%);
+      -webkit-shape-outside: circle(50% at 50% 50%);
+      shape-outside: circle(50% at 50% 50%);
+    }
+
+    @include respond(phone) {
+      transform: translateX(-3rem) skewX(0);
+    }
+
+    @include respond(tablet-portrait) {
+      width: 9rem;
+      height: 9rem;
+    }
+  }
+ 
+  &__img {
+    height: 100%;
+    transform: translateX(-4rem) scale(1.2);
+    backface-visibility: hidden;
+    transition: all 0.5s;
+
+    @include respond(tablet-portrait) {
+      transform: translateX(-3rem) scale(1);
+    }
+  }
+
+  &__text {
+    transform: skewX(6deg);
+    @include respond(phone) {
+      transform: translateX(-3rem) skewX(0);
+    }
+
+    @include respond(tablet-portrait) {
+      .heading-tertiary { 
+        letter-spacing: 0.5rem;
+      }
+    }
+  }
+
+  &__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    color: $color-white;
+    font-size: 1.7rem;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.5s;
+    backface-visibility: hidden;
+  }
+
+  &:hover &__caption {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+
+  &:hover &__img {
+    transform: translateX(-4rem) scale(1);
+    filter: blur(0.2rem) brightness(80%);
+  }
+}

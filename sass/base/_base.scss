@@ -1,0 +1,42 @@
+// RESET
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  // 10px we want divided by 16px root = 0.625
+  // 1rem = 10px
+  font-size: 62.5%;
+
+  @include respond(tablet-landscape) {
+    //width < 1200
+    // larger media query before the smaller media query. last declaration is applied
+    font-size: 56.25%; //1 rem = 9px, 9/16 = 56.25%
+  }
+
+  @include respond(tablet-portrait) { 
+    //width < 900
+    font-size: 50%; //1 rem = 8px, 8/16 = 50%
+  }
+
+  @include respond(big-desktop) {
+    font-size: 80%; //1 rem = 12px, 12/16 = 75%
+  }
+
+  @include respond(phone) {
+    font-size: 50%;
+  }
+}
+
+body {
+  padding: 3rem;
+
+  @include respond(tablet-portrait) {
+    //width < 900
+    padding: 0;
+  }
+}

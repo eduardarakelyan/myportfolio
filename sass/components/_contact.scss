@@ -1,0 +1,31 @@
+.contact {
+    &-container {
+        width: 30%;
+        margin: 0 auto;
+        text-align: center;
+        background-color: $color-brown-light;
+        padding: 5rem 3rem;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+
+        @include respond(phone) {
+            width: 50%;
+        }
+
+        h2{
+            font-size: 4rem;
+            color: white;
+        }
+        p,
+        a {
+            font-size: 2rem;
+            color:white
+        }
+        a {
+            text-decoration: none;
+        }
+        a::after {
+            content:" (Link)";
+        }
+        
+    }
+}   

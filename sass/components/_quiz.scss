@@ -1,0 +1,112 @@
+
+.quizContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $color-grey-light;
+  width: 50rem;
+  height: 50rem;
+  
+  h1 {
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 2rem;
+    text-decoration: underline;
+    font-size: 4rem;
+  }
+}
+
+.quizStartQuizBtn {
+  background-color: $color-white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  border-radius: 4rem;
+}
+
+.quizStartQuizBtn2 {
+  background-color: $color-white;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  border-radius: 4rem;
+}
+.quizGuide {
+  position: absolute;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.quizContinueBtn {
+  background-color: $color-white;
+  text-align: center;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  float: right;
+  border: none;
+  border-radius: 4rem;
+}
+
+.quizAssessment {
+  position: absolute;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#quizChoicesContainer > a {
+  border: 2px solid $color-black;
+  display: block;
+  margin: 1rem 0;
+  cursor: pointer;
+}
+
+#quizChoicesContainer > a:hover {
+  background-color: $color-purple;
+  color: $color-white;
+}
+
+.rightAnswerActive {
+  background-color: $color-primary;
+  color:$color-black;
+  pointer-events: none; 
+}
+
+.wrongAnswerActive {
+  background-color: red;
+  color: $color-white;
+  pointer-events: none;
+}
+.noPointer {
+  pointer-events: none;
+}
+
+.quizNextBtn {
+  background-color: $color-white;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  float: right;
+  border: none;
+  border-radius: 4rem;
+}
+
+.quizFinished {
+  position: absolute;
+  text-align: center;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+  h2, h3 {
+    margin-bottom: 1rem;
+  }
+}
+

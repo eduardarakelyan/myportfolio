@@ -1,0 +1,58 @@
+.btn {
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 3rem;
+    transition: all 0.2s;
+    font-size: 1.4rem;
+    font-family: "Josefin Sans", sans-serif;
+
+    @include respond(tablet-portrait) {
+      font-size: 1.6rem;
+    }
+  }
+
+  &:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+  }
+  //when we click an element
+  &:active {
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+  }
+
+  &--white {
+    background-color: $color-white;
+    color: $color-black;
+  }
+
+  &--animated {
+    animation-name: moveInButton;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 0.7s;
+    animation-fill-mode: backwards;
+  }
+
+  &-proj {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  &-quotes-container {
+    margin-top: 3rem;
+    text-align: center;
+  }
+  &-event-wrap {
+    position: absolute;
+    bottom: 16%;
+  }
+
+  &-questions {
+    display: block;
+  }
+}

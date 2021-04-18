@@ -1,0 +1,68 @@
+.weather {
+  &--instructions {
+    width: 60%;
+    margin: 0 auto;
+
+    @include respond(phone) {
+      width: 80%;
+    }
+  }
+
+  &--instructions h2 {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  &--instructions p {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  &--display {
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+    padding: 5rem;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+
+    @include respond(phone) {
+      width: 85%;
+    }
+
+    @include respond(tablet-portrait) {
+      width: 80%;
+    }
+  }
+
+  &--ptemp {
+    font-size: 10rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  &--h1name {
+    font-size: 3.5rem;
+  }
+
+  &--pdesc {
+    font-size: 1.8rem;
+  }
+
+  &--ptemp,
+  &--h1name,
+  &--pdesc {
+    text-shadow: 0.1rem 0.1rem $color-white;
+  }
+
+  &--atempBtn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    text-decoration: none;
+    color: $color-white;
+    border: 0.2rem solid $color-white;
+    padding: 0 1rem;
+    background-color: $color-black;
+  }
+}

@@ -1,0 +1,98 @@
+.card {
+  background-image: linear-gradient(to top, $color-blue-dark1,$color-blue-dark2);
+  height: 50rem;
+  position: relative;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+  transition: all 0.2s;
+
+  &__picture {
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: soft-light;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 90%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 90%, 0 100%);
+    &--1 {
+      background-image: linear-gradient(
+          to right bottom,
+          $color-blue-dark1,
+          $color-blue-dark2
+        ),
+        url("../../img/pexels-dominika-roseclay.jpg");
+    }
+    &--2 {
+      background-image: linear-gradient(
+          to right bottom,
+          $color-blue-dark1,
+          $color-blue-dark2
+        ),
+        url("../../img/pexels-pixabay-weather.jpg");
+    }
+    &--3 {
+      background-image: linear-gradient(
+          to right bottom,
+          $color-blue-dark1,
+          $color-blue-dark2
+        ),
+        url("../../img/pexels-ekrulila-4402272.jpg");
+    }
+
+    &--4 {
+      background-image: linear-gradient(
+          to right bottom,
+          $color-blue-dark1,
+          $color-blue-dark2
+        ),
+        url("../../img/pexels-tranmautritam.jpg");
+    }
+  }
+
+  &__heading {
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: $color-white;
+    position: absolute;
+    top: 10rem;
+    width: 90%;
+    font-family: "Ravi Prakash", cursive;
+
+    @include respond(tablet-portrait) {
+      font-size: 2.3rem;
+    }
+  }
+
+  &__heading-span {
+    padding: 0.3rem 1.5rem;
+    &--3 {
+      background-color: rgba($color-black, 0.7);
+      border-bottom: 1px solid $color-white;
+      border-right: 1px solid $color-white;
+    }
+  }
+
+  &__details {
+    ul {
+      list-style-type: none;
+      width: 80%;
+      margin: 0 auto;
+      li {
+        text-align: center;
+        font-size: 1.7rem;
+        padding: 1rem;
+        color: white;
+
+        @include respond(tablet-portrait) {
+          font-size: 1.8rem;
+        }
+
+        &:not(:last-child) {
+          border-bottom: 1px solid $color-blue-light;
+        }
+      }
+    }
+  }
+
+  &:hover {
+    transform: translateY(-1.5rem) scale(1.03);
+  }
+}

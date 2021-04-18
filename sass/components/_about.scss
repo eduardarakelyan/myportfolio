@@ -1,0 +1,115 @@
+.about {
+    &-container {
+        @include clearfix;
+        font-family: 'New Tegomin', serif;
+
+        @include respond(tablet-portrait) {
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+
+    &-boxLeft {
+        background-color: $color-blue-dark2;
+        height: 20rem;
+        width: 50%;
+        float: left;
+
+        @include respond(tablet-portrait) {
+            width: 100%;
+            text-align: center;
+        }   
+
+        @include respond(phone) {
+            width: 100%;
+            text-align: center;
+        }
+
+        h2 {
+            
+            text-align: center;
+            line-height: 20rem;
+            font-size: 4rem;
+            letter-spacing: 0.5rem;
+
+            @include respond(tablet-portrait) { 
+                font-size: 3rem;
+            }
+
+            @include respond(phone) {
+                font-size: 1.5em;
+                line-height: inherit;  
+            }
+        }
+        img {
+            height: 20rem;
+            float:right;
+            margin-left: 1rem;
+
+            @include respond(tablet-portrait) {
+                margin-left: 0;
+            }  
+
+            @include respond(phone) {
+            margin-left: 0;
+            height: 15rem;
+            float: none;
+            }
+        }
+    }
+
+    &-boxRight {
+        float:right;
+        width: 50%; 
+        background-color: $color-blue-dark2;   
+
+        @include respond(tablet-portrait) {
+            width: 100%;  
+            text-align: center;
+            margin-top: 8rem;
+        }   
+
+
+        @include respond(phone) {
+            width: 100%;
+            text-align: center;
+        }   
+
+        img {
+            height: 20rem;
+            float:left;
+            margin-right: 1rem;  
+
+            @include respond(tablet-portrait) {
+                margin-right: 0;
+            } 
+            
+            
+            @include respond(phone) {
+            height: 15rem;
+            float: none;
+            margin-right: 0;
+            }
+
+        }
+        h3 {
+            background-color: $color-blue-dark2;
+            font-size: 4rem;
+
+        }
+
+        p {
+            line-height: 3rem;
+            font-size: 1.5rem;
+
+            @include respond(tablet-portrait) {
+                font-size: 1.8rem;
+            } 
+
+            @include respond(phone) {
+                font-size: 2rem;
+            }
+        }
+    }
+    
+}   

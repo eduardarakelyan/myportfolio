@@ -1,0 +1,66 @@
+.footer {
+  background-color: $color-black;
+  color: $color-grey-light;
+  padding: 10rem 0;
+  font-size: 1.4rem;
+  font-family: "DotGothic16", sans-serif;
+
+  @include respond(tablet-portrait) {
+    padding: 5rem 0;
+    font-size: 1.4rem;
+  }
+
+  &__left {
+    float: left;
+  }
+
+  &__right {
+    float: right;
+  }
+
+  &__container {
+    width: 50%;
+    margin: 0 auto;
+
+    @include respond(phone) {
+      width: 85%;
+    }
+  }
+
+  &__navigation {
+    border-top: 1px solid $color-grey-light;
+    padding-top: 1rem;
+    display: inline-block;
+  }
+
+  &__list {
+    list-style-type: none;
+  }
+
+  &__item {
+    display: inline-block;
+
+    &:not(:last-child){
+      margin-right: 1.5rem;
+    }
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      color: $color-grey-light;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    &:hover,
+    &:active {
+      color: $color-brown-light;
+    }
+  }
+
+  &__copyright {
+    border-top: 1px solid $color-grey-light;
+    padding-top: 1rem;
+    display: inline-block;
+  }
+}
