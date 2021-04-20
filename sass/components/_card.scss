@@ -1,5 +1,9 @@
 .card {
-  background-image: linear-gradient(to top, $color-blue-dark1,$color-blue-dark2);
+  background-image: linear-gradient(
+    to top,
+    $color-blue-dark1,
+    $color-blue-dark2
+  );
   height: 50rem;
   position: relative;
   box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
