@@ -339,7 +339,7 @@ body {
     .card__picture--3 {
       background-image: linear-gradient(to right bottom, #254E58, #112D32), url("../img/pexels-ekrulila-4402272.jpg"); }
     .card__picture--4 {
-      background-image: linear-gradient(to right bottom, #254E58, #112D32), url("../../img/pexels-tranmautritam.jpg"); }
+      background-image: linear-gradient(to right bottom, #254E58, #112D32), url("../img/pexels-tranmautritam.jpg"); }
   .card__heading {
     font-size: 2rem;
     font-weight: 300;
