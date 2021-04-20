@@ -333,11 +333,11 @@ body {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 90%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 90%, 0 100%); }
     .card__picture--1 {
-      background-image: linear-gradient(to right bottom, #254E58, #112D32), url("././img/pexels-dominika-roseclay.jpg"); }
+      background-image: linear-gradient(to right bottom, #254E58, #112D32), url("../img/pexels-dominika-roseclay.jpg"); }
     .card__picture--2 {
-      background-image: linear-gradient(to right bottom, #254E58, #112D32), url("../../img/pexels-pixabay-weather.jpg"); }
+      background-image: linear-gradient(to right bottom, #254E58, #112D32), url("../img/pexels-pixabay-weather.jpg"); }
     .card__picture--3 {
-      background-image: linear-gradient(to right bottom, #254E58, #112D32), url("../../img/pexels-ekrulila-4402272.jpg"); }
+      background-image: linear-gradient(to right bottom, #254E58, #112D32), url("../img/pexels-ekrulila-4402272.jpg"); }
     .card__picture--4 {
       background-image: linear-gradient(to right bottom, #254E58, #112D32), url("../../img/pexels-tranmautritam.jpg"); }
   .card__heading {
