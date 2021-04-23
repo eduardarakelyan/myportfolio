@@ -8,7 +8,7 @@
       rgba($color-primary, 0.1),
       rgba($color-black, 0.5)
     ),
-    url("/img/grass-unsplash.jpg");
+    url("../img/grass-unsplash.jpg");
   background-size: contain;
   background-position: top;
   padding: 6rem;
@@ -32,9 +32,9 @@
     width: 13rem;
     height: 13rem;
     float: left;
-    overflow: hidden; 
+    overflow: hidden;
 
-    transform: translateX(-3rem); 
+    transform: translateX(-3rem);
     position: relative;
     overflow: hidden;
     border-radius: 50%;
@@ -55,7 +55,7 @@
       height: 9rem;
     }
   }
- 
+
   &__img {
     height: 100%;
     transform: translateX(-4rem) scale(1.2);
@@ -74,7 +74,7 @@
     }
 
     @include respond(tablet-portrait) {
-      .heading-tertiary { 
+      .heading-tertiary {
         letter-spacing: 0.5rem;
       }
     }

@@ -22,7 +22,6 @@ body {
     animation-duration: 1s;
     animation-timing-function: ease-out;
 
-
     @include respond(tablet-portrait) {
       font-size: 5rem;
     }
