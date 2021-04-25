@@ -259,7 +259,7 @@ body {
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
   @media (max-width: 37.5em) {
     .contact-container {
-      width: 50%; } }
+      width: 70%; } }
   .contact-container h2 {
     font-size: 4rem;
     color: white; }
