@@ -23,7 +23,8 @@
     margin: 0 auto;
 
     @include respond(phone) {
-      width: 85%;
+      width: 100%;
+      float: none;
     }
   }
 
@@ -40,7 +41,7 @@
   &__item {
     display: inline-block;
 
-    &:not(:last-child){
+    &:not(:last-child) {
       margin-right: 1.5rem;
     }
   }
