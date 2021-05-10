@@ -803,7 +803,7 @@ body {
   color: white; }
   @media (max-width: 37.5em) {
     .section-about {
-      margin-top: -9%; } }
+      margin-top: -10%; } }
 
 .section-projects {
   background-color: #254E58;
