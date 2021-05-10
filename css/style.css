@@ -687,7 +687,7 @@ body {
 
 .header {
   height: 85vh;
-  background-image: linear-gradient(to bottom, #7fffd433, #000), url(../img/pexels-melchor-gama-631342.jpg);
+  background-color: #254E58;
   background-size: cover;
   background-position: top;
   position: relative; }

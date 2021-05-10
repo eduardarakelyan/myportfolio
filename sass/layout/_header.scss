@@ -1,11 +1,6 @@
 .header {
   height: 85vh;
-  background-image: linear-gradient(
-      to bottom,
-      $color-primary-transparent,
-      $color-black
-    ),
-    url(../img/pexels-melchor-gama-631342.jpg);
+  background-color: $color-blue-dark1;
   background-size: cover;
   background-position: top;
   position: relative;
