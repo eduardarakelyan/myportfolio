@@ -52,7 +52,7 @@ let quotes = [
 nextBtn.addEventListener('click', () => {
     const randomNum = Math.floor(Math.random() * quotes.length);
     document.querySelector('.heading-tertiary').innerHTML = quotes[randomNum].name; 
-    document.querySelector('.story__img').src = `./img/${quotes[randomNum].name}.jpg`;
+    document.querySelector('.story__img').src = `img/${quotes[randomNum].name}.jpg`;
     document.querySelector('.story__caption').textContent = quotes[randomNum].name;
     document.querySelector('#quote').innerHTML = quotes[randomNum].quote;
 }) 
