@@ -21,14 +21,14 @@
   }
 }
 
-.stories {
-  padding: 10rem 0;
-  background-color: $color-blue-light3;
+// .stories {
+//   padding: 10rem 0;
+//   background-color: $color-blue-light3;
 
-  @include respond(tablet-portrait) {
-    padding: 8rem 52px;
-  }
-}
+//   @include respond(tablet-portrait) {
+//     padding: 8rem 52px;
+//   }
+// }
 
 .section-contact {
   background-color: $color-blue-dark2;

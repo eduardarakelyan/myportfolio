@@ -53,6 +53,10 @@
     background-color: $color-blue-dark1;
     box-shadow: 0 2rem 4rem rgba($color-black, 0.2);
 
+    @include respond(phone) {
+      width: 100%;
+    }
+
     &-white {
       position: absolute;
       top: 50%;
